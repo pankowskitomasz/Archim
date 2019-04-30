@@ -1,0 +1,110 @@
+@include aoa-bg-series($img-class-arr,$img-col-arr,0,"center center","cover","scroll");
+
+.bg-red{
+    background-color: $archim-spacer-bg;
+}
+.contact-data{
+	margin-bottom: 40px;
+	padding-left: 0px;
+	padding-right: 0px;
+	form{
+		opacity: 0.7;
+		padding: 10px;
+		background-color: black;
+		.form-control{
+			margin-bottom: 5px
+		}
+		input{
+			&:focus{
+                background-color: black;
+                box-shadow: none!important;
+				color:white;
+			}
+			background-color: black;
+			border: none;
+			color: white;
+			box-shadow: none;
+			border-bottom: 1px solid silver;
+			border-radius: 0;
+		}
+		input[type="submit"], input[type="reset"]{
+			font-size: 0.9em;
+			background-color: black;
+			border-radius: 30px;
+			color: white;
+			cursor: pointer;
+			border: 1px solid white;
+			padding: 3px 10px;
+			margin: 6px;
+			margin-bottom:1px;
+			border-bottom: 1px solid silver;
+			&:hover{
+				border: 1px solid white;
+				color: black;
+				background-color: white;
+			}
+		}
+		textarea{
+			&:focus{
+				background-color: black;
+                box-shadow: none!important;
+				color:white;
+			}
+			background-color: black;
+			color: white;
+			border:none;
+			box-shadow: none;
+			border-radius: 0;
+			border-bottom: 1px solid silver;
+			resize: none;
+		}
+	}
+	div[class^="col"]{	
+		height: 300x;
+		&:first-of-type{
+			background-color: white;
+		}
+		&:nth-of-type(2){
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+	}
+}
+.dropdown-menu{
+	.dropdown-item{
+		&:active{
+			background-color:$dropdown-item-bg !important;
+			color: $dropdown-item-color !important;
+		}
+		color:rgba(0,0,0,.5) !important;
+	}
+}
+.fit-top{
+    @include set-calc-property("height",100vh,$navbar-height);
+    @include set-calc-property("min-height",100vh,$navbar-height);
+}
+.font-f1{
+    font-family: $font-f1;
+}
+.icon-item{
+    &:hover{
+        color: darken($icon-color,35%) !important; 
+    }
+    color: $icon-color !important;
+    font-size: $icon-size;
+}
+.img-fit{
+    object-fit: cover;
+    width: 100%;
+}
+.list-var{
+    .list-inline-item{
+        display:  inline-block!important;
+    }
+}
+.minh-100{
+    min-height: 100vh;
+}
+.text-shd{
+    text-shadow: $txt-shd;
+}
