@@ -3,6 +3,11 @@
 .bg-red{
     background-color: $archim-spacer-bg;
 }
+.border{
+	&-red{
+		border-color: $archim-spacer-bg !important;
+	}
+}
 .contact-data{
 	margin-bottom: 40px;
 	padding-left: 0px;
@@ -72,11 +77,11 @@
 }
 .dropdown-menu{
 	.dropdown-item{
-		&:active{
+		&:active, &:hover,&.active{
 			background-color:$dropdown-item-bg !important;
 			color: $dropdown-item-color !important;
 		}
-		color:rgba(0,0,0,.5) !important;
+		color: $navbar-text-color !important;
 	}
 }
 .fit-top{
@@ -105,6 +110,16 @@
 .minh-100{
     min-height: 100vh;
 }
-.text-shd{
-    text-shadow: $txt-shd;
+.navbar-light{
+	.navbar-nav .nav-link {
+		color: $navbar-text-color;
+	}
+}
+.text{
+	&-red{
+		color: $navbar-text-color;
+	}
+	&-shd{
+		text-shadow: $txt-shd;
+	}
 }

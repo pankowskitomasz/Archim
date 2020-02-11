@@ -15,7 +15,7 @@
     <title>Archim | Potwierdzenie</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light border-bottom border-secondary shadow-lg">
+    <nav class="navbar navbar-expand-md navbar-light border-bottom border-red shadow-lg">
         <a href="index.html" class="navbar-brand">
             <img src="img/logo_big.jpg" alt="archim logo">
         </a>
@@ -29,7 +29,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Oferta</a>
-                    <div class="dropdown-menu mt-0 mt-md-3">
+                    <div class="dropdown-menu mt-0 mt-md-2 py-0">
                         <a href="nadzor.html" class="dropdown-item">Nadzór</a>
                         <a href="przeglady.html" class="dropdown-item">Przeglądy</a>
                         <a href="inne.html" class="dropdown-item">Inne</a>
@@ -120,10 +120,45 @@
                 </ul>
             </div>
         </div>
-        <div class="row px-3 text-center">
-            <p class="mx-auto pt-2 border-top border-light w-100">Copyright &copy; 2019</p>
+        <div class="row px-3 text-center">            
+            <small class="mx-auto w-100 border-top border-light text-white my-0">
+                Website demo, Copyright &copy; 2019-2020 | 
+                <a href="privacy.html" class="text-white">Privacy</a>
+            </small>
         </div>
     </footer>
+    <div class="modal" id="privacyModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="font-header text-red">GPDR Declaration</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="initialism">
+                        This website is a <span class="text-danger"> demo version </span> of real website,  It doesn't collect and process,
+                        in long term meaning (longer than needed for website operation during visitor's
+                        presence), any user (visitor) data. All information collected during visitor's 
+                        presence on this website is used only for technical purposes, required for 
+                        correct operation of website or demonstration purposes related to technical 
+                        mechanisms and presentation of its operation... 
+                        <a href="privacy.html" class="label label-primary">More about privacy</a>
+                    </p>                        
+                    <p class="initialism">
+                        If you accept privacy policy please click button "accept". If you 
+                        refuse it, leave page by closing it in your web browser, please.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center w-100">
+                        <button class="btn btn-success"
+                            onclick="acceptPrivacyPolicy()">
+                            Accept
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
     <script type="text/javascript" src="js/main.min.js"></script>
 </body>
 </html>

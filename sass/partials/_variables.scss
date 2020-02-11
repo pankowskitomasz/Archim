@@ -30,10 +30,11 @@ $img-class-arr:
     "serv-s";
 
 $archim-spacer-bg: rgb(139,0,0);
-$dropdown-item-bg: #6c757d;
+$dropdown-item-bg: $archim-spacer-bg;
 $dropdown-item-color: #fff;
 $font-f1: 'Audiowide', cursive;
 $icon-color: #fff;
 $icon-size: 30px;
 $navbar-height: -66px;
+$navbar-text-color: $archim-spacer-bg;
 $txt-shd: 1px 1px 3px black;

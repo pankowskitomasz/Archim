@@ -15,7 +15,7 @@
     <title>Archim | Przeglądy</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light border-bottom border-secondary shadow-lg">
+    <nav class="navbar navbar-expand-md navbar-light border-bottom border-red shadow-lg">
         <a href="index.html" class="navbar-brand">
             <img src="img/logo_big.jpg" alt="archim logo">
         </a>
@@ -29,9 +29,9 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Oferta</a>
-                    <div class="dropdown-menu mt-0 mt-md-3">
+                    <div class="dropdown-menu mt-0 mt-md-2 py-0">
                         <a href="nadzor.html" class="dropdown-item">Nadzór</a>
-                        <a href="#" class="dropdown-item">Przeglądy</a>
+                        <a href="#" class="dropdown-item active">Przeglądy</a>
                         <a href="inne.html" class="dropdown-item">Inne</a>
                     </div>
                 </li>
@@ -49,8 +49,8 @@
             <div class="d-none d-md-inline col-md-6 pdy-s-1 minh-100"></div>
             <div class="col-12 col-md-6 p-3 d-flex">
                 <div class="my-auto">
-                    <h3 class="text-center section-title font-f1 text-secondary">Zaniedbany obowiązek</h3>
-                    <p class="text-center text-md-left lead">
+                    <h3 class="text-center section-title font-f1 text-red">Zaniedbany obowiązek</h3>
+                    <p class="text-center text-md-left px-3">
                         Przeglądy budowlane są jedną z najbardziej zaniedbanych form nadzoru 
                         budowlanego istniejącego budynku. Obowiązkiem przeglądów budowlanych 
                         objęte są nie tylko budynki, ale również obecnie bardzo popularne 
@@ -64,8 +64,8 @@
         <div class="row ml-0 mw-100">
             <div class="col-12 col-md-6 p-3 d-flex">
                 <div class="my-auto">
-                    <h3 class="text-center section-title font-f1 text-secondary">Usługi projektowe</h3>
-                    <p class="lead">
+                    <h3 class="text-center section-title font-f1 text-red">Usługi projektowe</h3>
+                    <p class="px-3">
                         Prawo wglądu do książki obiektu budowlanego ma nie tylko powiatowy 
                         inspektor nadzoru budowlanego, który może nałożyć mandat na właściciela 
                         budynku z powodu braku prowadzenia książki obiektu budowlanego, lecz 
@@ -105,9 +105,44 @@
             </div>
         </div>
         <div class="row px-3 text-center">
-            <p class="mx-auto pt-2 border-top border-light w-100">Copyright &copy; 2019</p>
+            <small class="mx-auto w-100 border-top border-light text-white my-0">
+                Website demo, Copyright &copy; 2019-2020 | 
+                <a href="privacy.html" class="text-white">Privacy</a>
+            </small>
         </div>
     </footer>
+    <div class="modal" id="privacyModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="font-header text-red">GPDR Declaration</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="initialism">
+                        This website is a <span class="text-danger"> demo version </span> of real website,  It doesn't collect and process,
+                        in long term meaning (longer than needed for website operation during visitor's
+                        presence), any user (visitor) data. All information collected during visitor's 
+                        presence on this website is used only for technical purposes, required for 
+                        correct operation of website or demonstration purposes related to technical 
+                        mechanisms and presentation of its operation... 
+                        <a href="privacy.html" class="label label-primary">More about privacy</a>
+                    </p>                        
+                    <p class="initialism">
+                        If you accept privacy policy please click button "accept". If you 
+                        refuse it, leave page by closing it in your web browser, please.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center w-100">
+                        <button class="btn btn-success"
+                            onclick="acceptPrivacyPolicy()">
+                            Accept
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
     <script type="text/javascript" src="js/main.min.js"></script>
 </body>
 </html>
