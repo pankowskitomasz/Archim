@@ -1,5 +1,9 @@
 @include aoa-bg-series($img-class-arr,$img-col-arr,0,"center center","cover","scroll");
 
+*{
+	font-family: $font-main;
+}
+
 .bg-red{
     background-color: $archim-spacer-bg;
 }
@@ -81,10 +85,15 @@
 }
 .fit-top{
     @include set-calc-property("height",100vh,$navbar-height);
-    @include set-calc-property("min-height",100vh,$navbar-height);
+	//@include set-calc-property("min-height",100vh,$navbar-height);
+	max-height: 600px;
+	min-height: auto;
 }
 .font-f1{
-    font-family: $font-f1;
+	font-family: $font-f1 !important;
+	& *{
+		font-family: $font-f1 !important;
+	}
 }
 .icon-item{
     &:hover{
@@ -94,6 +103,7 @@
     font-size: $icon-size;
 }
 .img-fit{
+	height:100%;
     object-fit: cover;
     width: 100%;
 }
@@ -102,8 +112,13 @@
         display:  inline-block!important;
     }
 }
-.minh-100{
-    min-height: 100vh;
+.minh{
+	&-50{
+		min-height: 50vh !important;
+	}
+	&-100{
+		min-height: 100vh !important;
+	}
 }
 .text-shd{
     text-shadow: $txt-shd;

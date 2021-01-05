@@ -1,6 +1,8 @@
 $about-imgs:
     "../img/about-s1-bg-1.jpg",
     "../img/about-s1-bg-2.jpg";
+$contact-imgs:
+    "../img/contact-s2.jpg";
 $index-imgs:
     "../img/idx-s3-bg-1.jpg",
     "../img/idx-s3-bg-2.jpg",
@@ -14,16 +16,16 @@ $pdy-imgs:
 $serv-imgs:
     "../img/serv-s1-bg-1.jpg",
     "../img/serv-s1-bg-2.jpg";
-
 $img-col-arr:
     $about-imgs,
+    $contact-imgs,
     $index-imgs,
     $ndz-imgs,
     $pdy-imgs,
     $serv-imgs;
-
 $img-class-arr:
     "about-s",
+    "contact-s",
     "index-s",
     "ndz-s",
     "pdy-s",
@@ -33,7 +35,8 @@ $archim-spacer-bg: rgb(139,0,0);
 $dropdown-item-bg: #6c757d;
 $dropdown-item-color: #fff;
 $font-f1: 'Audiowide', cursive;
+$font-main: 'Quicksand';
 $icon-color: #fff;
-$icon-size: 30px;
+$icon-size: 25px;
 $navbar-height: -66px;
 $txt-shd: 1px 1px 3px black;

@@ -55,18 +55,20 @@
             </div>
         </div>       
     </section>
-    <footer class="container-fluid bg-red p-3 text-white border-top border-dark">
+    <footer class="container-fluid bg-red px-3 text-white border-top border-dark">
         <div class="row">
-            <div class="col-12 col-sm-6 d-flex">
-                <ul class="list-unstyled my-auto pl-3 border-left border-light">
-                    <li>Archim Sp. z o.o.</li>
-                    <li>00-000 Warszawa</li>
-                    <li>ul.: Marszałkowska 1</li>
-                    <li>tel.: (+48) 123 456 789</li>
-                    <li>email: archim&#64;mail.com</li>
-                </ul>
+            <div class="col-12 col-sm-6 d-flex align-items-end order-2 order-sm-1">
+                <small>
+                    <ul class="list-unstyled my-auto pl-3 border-left border-light pb-4">
+                        <li>Archim Sp. z o.o.</li>
+                        <li>00-000 Warszawa</li>
+                        <li>ul.: Marszałkowska 1</li>
+                        <li>tel.: (+48) 123 456 789</li>
+                        <li>email: archim&#64;mail.com</li>
+                    </ul>
+                </small>
             </div>
-            <div class="col-12 col-sm-6">                
+            <div class="col-12 col-sm-6 order-1 order-sm-2">                
                 <ul class="list-unstyled list-var mx-auto text-center text-sm-right mt-2 p-3">
                     <li class="list-inline-item">
                         <a href="https://www.facebook.com/" target="_blank" class="icon-item mx-1 mr-sm-0" rel="noreferrer"><span class="fa fa-facebook-official"></span></a>
@@ -80,8 +82,13 @@
                 </ul>
             </div>
         </div>
-        <div class="row px-3 text-center">
-            <p class="mx-auto pt-2 border-top border-light w-100">Copyright &copy; 2019</p>
+        <div class="row px-3 text-center pb-1">
+            <small class="mx-auto pt-2 border-top border-light w-100">
+                Copyright &copy; 2019-2021 Tomasz Pankowski 
+                <a href="privacy.html" class="text-light">
+                    Privacy policy
+                </a>
+            </small>
         </div>
     </footer>
     <script type="text/javascript" src="js/main.min.js"></script>
