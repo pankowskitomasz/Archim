@@ -21,7 +21,7 @@ function getCookie(paramA) {
         }
     }
 }
-
+/*
 if(getCookie("rodoAccept")!=="1"){
     var gpdrMsg = "GDPR declaration - this is website demo, so it doesn't store any data.\n";
     gpdrMsg += "All data entered by You in forms on this website are processed only\n";
@@ -33,3 +33,4 @@ if(getCookie("rodoAccept")!=="1"){
         setCookie("rodoAccept","1",1);
     }
 }
+*/
